@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morse Translator</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
+
 <body>
-    <h1 class="test"></h1>
+    <header>
+        <h3 class="glow">Morse Translation</h3>
+    </header>
+    <section class="container">
+        <label >Select Translation:</label>
+
+        <select name="TranslationType" id="translation">
+            <option value="toMorse">English -> Morse</option>
+            <option value="toEnglish" >Morse -> English</option>
+        </select>
+        <textarea id="inputText" class="shadow" placeholder="English/Morse Phrase here"></textarea>
+        <button id="btn" class="shadow">Translate</button>
+        <h4>Translation will come here 👇</h4>
+        <div id="output" style="padding: 0.5rem;" class="shadow"></div>
+    </section>
+    <footer>
+        <h3>about</h3>
+        <p> Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that
+            can be directly understood by a skilled listener or observer without special equipment....But Who else is
+            that skilled...Use it for secret conversations 😉</p>
+    </footer>
     <script src="/js/app.js"></script>
 </body>
+
 </html>
